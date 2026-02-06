@@ -5,7 +5,7 @@ public:
        for(auto x:s) {
         m[x]++;
        }
-       int val=m.begin()->second;
+       int val=m[s[0]];
        for(auto x:m){
         if(x.second!=val)return false;
        }
